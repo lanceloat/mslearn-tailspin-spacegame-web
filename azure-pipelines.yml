@@ -7,6 +7,6 @@ pool:
 variables:
     buildConfiguration : 'Release'
 
-step:
-- script : dotnet build --configuration $(buildConfiguration)
-  displayName : 'dotnet build --configuration $(buildConfiguration)'
+steps:
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build --configuration $(buildConfiguration)'
